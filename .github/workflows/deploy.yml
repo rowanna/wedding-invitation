@@ -16,13 +16,13 @@ jobs:
       - name: Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 23.6.0
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build Docs
-        run: npm run build:docs
+        run: npm run build
 
       - name: Deploy Docs
         uses: peaceiris/actions-gh-pages@v3
