@@ -1,0 +1,9 @@
+
+/* @import "tailwindcss/preflight"; */
+@tailwind utilities;
+@import "tailwindcss";
+
+
+
+@import "./assets/reset.css";
+@import "./assets/main.css";
