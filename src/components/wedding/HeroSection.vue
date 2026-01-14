@@ -6,9 +6,10 @@
     <div class="max-w-[500px] mx-auto px-[23px]">
       <div class="flex flex-col gap-[60px]">
         <div class="text-[40px] leading-[120%] tracking-[-0.01em] font-bold">
-          <span class="font-bold">같이 밥 먹고<br />
+          <span>같이 밥 먹고<br />
           나란히 하루를 걷는<br />
-          식구가 됩니다.</span>
+          </span>
+          <span class="typingText">식구가 됩니다.</span>
         </div>
         
         <div class="text-[28px] leading-[120%] text-center tracking-[-0.01em]">
@@ -48,3 +49,43 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+
+
+.typingText {
+  white-space: pre;
+  position: relative;
+  color: transparent;
+}
+
+.typingText::before {
+  content: "식구가 됩니다.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #0d0500;
+  overflow: hidden;
+  /* margin-left: 0px; */
+  border-right: 1px solid #0d0500;
+  animation: typing 1.5s steps(7), blink .5s step-end infinite alternate;
+
+}
+@keyframes typing{
+  0% {
+    width: 0%;
+  }
+  
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+</style>
