@@ -5,14 +5,14 @@
   <section class="bg-[#fef0e5] py-[60px] relative overflow-hidden">
     <div class="max-w-[500px] mx-auto px-[23px]">
       <div class="flex flex-col gap-[60px]">
-        <div class="text-[40px] leading-[120%] tracking-[-0.01em] font-bold">
+        <div class="mobile-text-wrap text-[40px] leading-[120%] tracking-[-0.01em] font-bold">
           <span>같이 밥 먹고<br />
           나란히 하루를 걷는<br />
           </span>
           <span class="typingText">식구가 됩니다.</span>
         </div>
         
-        <div class="text-[28px] leading-[120%] text-center tracking-[-0.01em]">
+        <div class="mobile-couple-name-wrap text-[28px] leading-[120%] text-center tracking-[-0.01em]">
             <span class="inline-block px-[10px]">🤵 이재인</span>
             <span class="inline-block px-[10px]">❣️</span>
             <span class="inline-block px-[10px]">나원지 👰</span>
@@ -33,11 +33,11 @@
       </div>
 
       <div>
-        <div class="flex gap-[16px]">
-          <button class="font-bold rounded-[100px] px-[24px] py-[10px] border-[2px] bg-[#FEE1CC] border-[#0d0500] text-center shadow-[0px_2px_2px_rgba(13,5,0,0.15)] [box-shadow:inset_0px_4px_0px_rgba(255,255,255,0.2),inset_0px_-5px_0px_rgba(13,5,0,0.15)]">
+        <div class="mobile-cta-wrap flex gap-[16px]">
+          <button class="mobile-cta font-bold rounded-[100px] px-[24px] py-[10px] border-[2px] bg-[#FEE1CC] border-[#0d0500] text-center shadow-[0px_2px_2px_rgba(13,5,0,0.15)] [box-shadow:inset_0px_4px_0px_rgba(255,255,255,0.2),inset_0px_-5px_0px_rgba(13,5,0,0.15)]">
             안내사항
           </button>
-          <button class="font-bold rounded-[100px] px-[24px] py-[10px] border-[2px] bg-[#F2F2F2] border-[#0d0500] text-center shadow-[0px_2px_2px_rgba(13,5,0,0.15)] [box-shadow:inset_0px_4px_0px_rgba(255,255,255,0.2),inset_0px_-5px_0px_rgba(13,5,0,0.15)]">
+          <button class="mobile-cta font-bold rounded-[100px] px-[24px] py-[10px] border-[2px] bg-[#F2F2F2] border-[#0d0500] text-center shadow-[0px_2px_2px_rgba(13,5,0,0.15)] [box-shadow:inset_0px_4px_0px_rgba(255,255,255,0.2),inset_0px_-5px_0px_rgba(13,5,0,0.15)]">
             광주-서울 버스 신청하기
           </button>
         </div>
@@ -68,18 +68,19 @@
   height: 100%;
   color: #0d0500;
   overflow: hidden;
-  /* margin-left: 0px; */
   border-right: 1px solid #0d0500;
-  animation: typing 1.5s steps(7), blink .5s step-end infinite alternate;
-
+  animation: typing 4s steps(7) infinite, blink .5s step-end infinite alternate;
 }
+
 @keyframes typing{
   0% {
     width: 0%;
   }
-  
-  100% {
+  70% {
     width: 100%;
+  }
+  100% {
+    width: 0%;
   }
 }
 
@@ -87,5 +88,19 @@
   50% {
     border-color: transparent
   }
+}
+
+
+.mobile-cta-wrap {
+  flex-direction: column;
+}
+.mobile-text-wrap {
+  font-size: 36px;
+}
+.mobile-couple-name-wrap {
+  font-size: 24px;
+}
+.mobile-couple-name-wrap span {
+  padding: 0 5px;
 }
 </style>
