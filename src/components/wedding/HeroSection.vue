@@ -95,7 +95,7 @@
   flex-direction: column;
 }
 .mobile-text-wrap {
-  font-size: 36px;
+  font-size: 34px;
 }
 .mobile-couple-name-wrap {
   font-size: 24px;
