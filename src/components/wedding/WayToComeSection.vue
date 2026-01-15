@@ -23,15 +23,14 @@
         </p>
         <br />
         <div class="small-info">
-        <h4>🚗 근처 주차장 안내</h4>
-        <ul>
-          <li>SK건설빌딩 주차장 (도보 3분)</li>
-          <li>안녕인사동 주차장 (도보 3분)</li>
-          <li>파킹프라자 인사동점 (도보 3분)</li>
-        </ul>
-        <span>주차비 1만원을 지원해드립니다.</span>
+          <h4>🚗 근처 주차장 안내</h4>
+          <ul>
+            <li>SK건설빌딩 주차장 (도보 3분)</li>
+            <li>안녕인사동 주차장 (도보 3분)</li>
+            <li>파킹프라자 인사동점 (도보 3분)</li>
+          </ul>
+          <span>주차비 1만원을 지원해드립니다.</span>
         </div>
-
       </div>
     </div>
   </section>
@@ -66,10 +65,9 @@ h3 {
 }
 .small-info {
   margin-top: 24px;
-    font-size: 14px;
-    line-height: 150%;
-    font-weight: 300;
-
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 300;
 }
 .small-info h4 {
   font-weight: 500;

@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-[#fef0e5] px-[23px] py-[23px] text-right">
+  <div class="bg-[#fef0e5] px-[23px] py-[15px] text-right">
     <span
       class="font-['Epilogue'] font-light text-sm leading-[120%] tracking-[0.1em]"
       >March 7th, 2026</span
     >
   </div>
-  <section class="bg-[#fef0e5] py-[60px]">
+  <section class="bg-[#fef0e5] py-[36px]">
     <div class="container">
       <div class="flex flex-col gap-[60px]">
         <div

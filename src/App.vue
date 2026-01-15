@@ -2,12 +2,14 @@
 import HeroSection from "@/components/wedding/HeroSection.vue";
 import LocationSection from "@/components/wedding/LocationSection.vue";
 import WayToComeSection from "@/components/wedding/WayToComeSection.vue";
+import DateSection from "@/components/wedding/DateSection.vue";
 </script>
 
 <template>
   <HeroSection />
   <LocationSection />
   <WayToComeSection />
+  <DateSection />
 </template>
 
 <style>
