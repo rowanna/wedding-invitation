@@ -3,6 +3,10 @@ import HeroSection from "@/components/wedding/HeroSection.vue";
 import LocationSection from "@/components/wedding/LocationSection.vue";
 import WayToComeSection from "@/components/wedding/WayToComeSection.vue";
 import DateSection from "@/components/wedding/DateSection.vue";
+import MealSection from "@/components/wedding/MealSection.vue";
+import CommentSection from "@/components/wedding/CommentSection.vue";
+import ContributionSection from "@/components/wedding/ContributionSection.vue";
+import GoToExhibitionSection from "@/components/wedding/GoToExhibitionSection.vue";
 </script>
 
 <template>
@@ -10,6 +14,10 @@ import DateSection from "@/components/wedding/DateSection.vue";
   <LocationSection />
   <WayToComeSection />
   <DateSection />
+  <MealSection />
+  <CommentSection />
+  <ContributionSection />
+  <GoToExhibitionSection />
 </template>
 
 <style>
