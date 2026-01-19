@@ -48,6 +48,7 @@
             안내사항
           </button>
           <button
+						@click="goSurvey"
             class="mobile-cta font-bold rounded-[100px] px-[24px] py-[10px] border-[2px] bg-[#F2F2F2] border-[#0d0500] text-center shadow-[0px_2px_2px_rgba(13,5,0,0.15)] [box-shadow:inset_0px_4px_0px_rgba(255,255,255,0.2),inset_0px_-5px_0px_rgba(13,5,0,0.15)]"
           >
             광주-서울 버스 신청하기
@@ -65,6 +66,13 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const goSurvey = () => {
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLScZzG_AiXnZ7VKa66BoOdhH6wQHxXaXNLOCF4_0t1GhV5XkGw/viewform?usp=dialog', '_blank')
+
+}
+</script>
 
 <style scoped>
 .typingText {
