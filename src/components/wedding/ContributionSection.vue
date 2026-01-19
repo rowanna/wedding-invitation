@@ -39,7 +39,7 @@
 .point-text {
   font-size: 16px;
   font-family: var(--font-serif);
-  color: var(--color-accent);
+  color: var(--color-red);
   line-height: 150%;
 }
 h2 {

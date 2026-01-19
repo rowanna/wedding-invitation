@@ -7,9 +7,11 @@ import MealSection from "@/components/wedding/MealSection.vue";
 import CommentSection from "@/components/wedding/CommentSection.vue";
 import ContributionSection from "@/components/wedding/ContributionSection.vue";
 import GoToExhibitionSection from "@/components/wedding/GoToExhibitionSection.vue";
+import IntroSection from "@/components/wedding/IntroSection.vue";
 </script>
 
 <template>
+  <IntroSection />
   <HeroSection />
   <LocationSection />
   <WayToComeSection />

@@ -2,19 +2,20 @@
   /* Colors */
   --color-primary: #0d0500;
   --color-secondary: #51504f;
-  --color-accent: #dc340c;
+  --color-red: #dc340c;
   --color-light: #fef0e5;
   --color-white: #ffffff;
   --color-border: #e0d8c9;
 
   /* Typography */
   --font-kr: "Noto Sans KR", sans-serif;
+  --font-kr-serif: "Noto Serif KR", sans-serif;
   --font-en: "Epilogue", sans-serif;
   --font-serif: "EB Garamond", serif;
 }
 
 html {
-  font-size: 16px;
+  font-size: 4.2667vw;
   -webkit-text-size-adjust: 100%;
 }
 
