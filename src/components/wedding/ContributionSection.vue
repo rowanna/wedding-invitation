@@ -10,8 +10,8 @@
         <div class="contribution-container">
           <h3>🤵신랑 부모 측</h3>
           <p>
-            이동하 국민은행 00000-00000-000000<br />
-            박형옥 국민은행 00000-00000-000000
+            이동하 신한은행 110-448-854490<br />
+            박형옥 신한은행 110-347-358868
           </p>
         </div>
         <div class="contribution-container">
