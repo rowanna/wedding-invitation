@@ -31,25 +31,39 @@
 }
 .nature-background-img {
   width: 100%;
-  height: 339px;
-  background-image: url("@/assets/date.png");
-  background-size: cover;
-  background-position: center;
+  height: 200px;
   position: relative;
 }
 
+
+.nature-background-img::after{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  content: "";
+  display: block;
+  width: 100px;
+  height: 70px;
+  background-image: url("@/assets/title-deco.png");
+}
+
+
 h2 {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif2);
   font-size: 32px;
   font-weight: 500;
-  color: var(--color-white);
+  color: var(--color-red);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -25%);
 }
 
 p {
   text-align: right;
+  font-family: var(--font-kr-serif);
+  line-height: 180%;
+  letter-spacing: .02rem;
 }
 </style>

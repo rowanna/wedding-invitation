@@ -1,9 +1,17 @@
 <template>
-  <section class="intro-section" :class="{ 'fade-out': isFaded }" @click="startFade">
+  <section
+    class="intro-section"
+    :class="{ 'fade-out': isFaded }"
+    @click="startFade"
+  >
     <div class="container">
       <div class="intro-content">
-          <img src="@/assets/intro-image.png" alt="Wedding Couple" class="couple-image" />
-        
+        <img
+          src="@/assets/intro-image.png"
+          alt="Wedding Couple"
+          class="couple-image"
+        />
+
         <div class="intro-names-container">
           <div class="groom">
             <span class="role">GROOM</span>
@@ -16,7 +24,6 @@
             <p class="name">나원지</p>
             <p class="description"><strong>나학수 김용수</strong>의 장녀</p>
           </div>
-          
         </div>
       </div>
     </div>
@@ -24,16 +31,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
 const isFaded = ref(false);
 
 const startFade = () => {
   isFaded.value = true;
   setTimeout(() => {
-    const intro = document.querySelector('.intro-section');
+    const intro = document.querySelector(".intro-section");
     if (intro) {
-      intro.style.display = 'none';
+      intro.style.display = "none";
     }
   }, 1000); // Match this with the CSS transition duration
 };
@@ -125,5 +132,4 @@ onMounted(() => {
 .description strong {
   font-size: 0.9rem;
 }
-
 </style>

@@ -10,7 +10,7 @@
         모바일로 결혼전시를 준비했습니다.
       </p>
       <button
-      @click="goToExhibition"
+        @click="goToExhibition"
         class="mobile-cta font-bold rounded-[100px] px-[24px] py-[10px] border-[2px] bg-[#FEE1CC] border-[#0d0500] text-center shadow-[0px_2px_2px_rgba(13,5,0,0.15)] [box-shadow:inset_0px_4px_0px_rgba(255,255,255,0.2),inset_0px_-5px_0px_rgba(13,5,0,0.15)]"
       >
         바로가기
@@ -21,8 +21,8 @@
 
 <script setup lang="ts">
 const goToExhibition = () => {
-  window.open('https://rowanna.github.io/wedding-exhibition/', '_blank')
-}
+  window.open("https://rowanna.github.io/wedding-exhibition/", "_blank");
+};
 </script>
 
 <style scoped>

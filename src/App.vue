@@ -13,11 +13,12 @@ import IntroSection from "@/components/wedding/IntroSection.vue";
 <template>
   <IntroSection />
   <HeroSection />
+  <CommentSection />
   <LocationSection />
   <WayToComeSection />
   <DateSection />
   <MealSection />
-  <CommentSection />
+  
   <ContributionSection />
   <GoToExhibitionSection />
 </template>

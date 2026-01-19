@@ -1,129 +1,151 @@
 <template>
-  <div class="bg-[#fef0e5] px-[23px] py-[15px] text-right">
-    <span
-      class="font-['Epilogue'] font-light text-sm leading-[120%] tracking-[0.1em]"
-      >March 7th, 2026</span
-    >
-  </div>
-  <section class="bg-[#fef0e5] py-[36px]">
+  <section class="">
     <div class="container">
-      <div class="flex flex-col gap-[60px]">
-        <div
-          class="mobile-text-wrap text-[40px] leading-[120%] tracking-[-0.01em] font-bold"
-        >
-          <span
-            >같이 밥 먹고<br />
-            나란히 하루를 걷는<br />
-          </span>
-          <span class="typingText">식구가 됩니다.</span>
-        </div>
+      <h1 class="title">WEDDING<br />EXHIBITION</h1>
 
-        <div
-          class="mobile-couple-name-wrap text-[28px] leading-[120%] text-center tracking-[-0.01em]"
-        >
-          <span class="inline-block px-[10px]">🤵 이재인</span>
-          <span class="inline-block px-[10px]">❣️</span>
-          <span class="inline-block px-[10px]">나원지 👰</span>
+      <div class="hero-image-wrap">
+        <div class="deco-img">
+          <img src="@/assets/deco-img.png" alt="Deco Image" />
         </div>
-
-        <div class="leading-[150%] mb-[24px]">
-          <p>
-            결혼식은 인사동 갤러리에서 저희의 <br />이야기를 담은 작은 전시회로
-            진행됩니다.
-          </p>
-          <br />
-          <p>
-            별도의 식순 없이 자유롭게 관람 가능하며, <br />오전 11시부터 오후
-            3시 사이에 <br />
-            편하신 시간에 방문해 주세요.
-          </p>
-        </div>
+        <img src="@/assets/hero-image.png" alt="Wedding Couple" />
       </div>
 
-      <div>
-        <div class="mobile-cta-wrap flex gap-[16px]">
-          <button
-            class="mobile-cta font-bold rounded-[100px] px-[24px] py-[10px] border-[2px] bg-[#FEE1CC] border-[#0d0500] text-center shadow-[0px_2px_2px_rgba(13,5,0,0.15)] [box-shadow:inset_0px_4px_0px_rgba(255,255,255,0.2),inset_0px_-5px_0px_rgba(13,5,0,0.15)]"
-          >
-            안내사항
-          </button>
-          <button
-						@click="goSurvey"
-            class="mobile-cta font-bold rounded-[100px] px-[24px] py-[10px] border-[2px] bg-[#F2F2F2] border-[#0d0500] text-center shadow-[0px_2px_2px_rgba(13,5,0,0.15)] [box-shadow:inset_0px_4px_0px_rgba(255,255,255,0.2),inset_0px_-5px_0px_rgba(13,5,0,0.15)]"
-          >
-            광주-서울 버스 신청하기
-          </button>
-        </div>
+      <button class="btn">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScZzG_AiXnZ7VKa66BoOdhH6wQHxXaXNLOCF4_0t1GhV5XkGw/viewform?usp=dialog"
+          target="_blank"
+          rel="noopener noreferrer"
+          >광주-서울 교통편 신청</a
+        >
+      </button>
 
-        <div class="mt-[64px]">
-          <img
-            src="@/assets/hero-image.png"
-            alt="Wedding Couple"
-            class="w-full h-auto"
-          />
+      <div class="info-wrap">
+        <!-- <div class="deco-img">
+          <img src="@/assets/deco-img.png" alt="Deco Image" />
+        </div> -->
+        <div class="info">
+          <img class="info-deco" src="@/assets/info-deco.png" alt="Deco Image" />
+          <p>2026. 03. 07 SAT<br />11:00 - 15:00</p>
+          <p>인사동 마루아트센터<br />2층 오미갤러리</p>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts">
-const goSurvey = () => {
-  window.open('https://docs.google.com/forms/d/e/1FAIpQLScZzG_AiXnZ7VKa66BoOdhH6wQHxXaXNLOCF4_0t1GhV5XkGw/viewform?usp=dialog', '_blank')
-
-}
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
-.typingText {
-  white-space: pre;
+section {
+  background-color: var(--color-main-bg-light);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  font-size: 48px;
+  color: var(--color-red);
+  font-family: var(--font-serif2);
+  line-height: 100%;
+  margin-bottom: 32px;
+}
+
+.hero-image-wrap {
+  margin-bottom: 32px;
   position: relative;
-  color: transparent;
 }
-
-.typingText::before {
-  content: "식구가 됩니다.";
+.deco-img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #0d0500;
-  overflow: hidden;
-  border-right: 1px solid #0d0500;
-  animation:
-    typing 4s steps(7) infinite,
-    blink 0.5s step-end infinite alternate;
-}
+  bottom: 0px;
+  right: -40px;
+        animation: dudungsil 2s linear infinite;
+  transform-origin: center;
 
-@keyframes typing {
+}
+@keyframes dudungsil {
   0% {
-    width: 0%;
+    transform: translateY(0px);
   }
-  70% {
-    width: 100%;
+  50% {
+    transform: translateY(10px);
   }
   100% {
-    width: 0%;
+    transform: translateY(0px);
   }
 }
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 300;
+  gap: 7.96px;
+  width: 202px;
+  height: 53px;
+  border: 1.5px solid #191715;
+  margin-bottom: 32px;
+  position: relative;
+}
+.btn::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 14px;
+  background-image: url("@/assets/arrow.png");
+}
+.btn:active {
+  border-color: var(--color-red);
+  color: var(--color-red);
 }
 
-.mobile-cta-wrap {
+.info-wrap {
+  position: relative;
+  width: 300px;
+  height: 220px;
+  margin-bottom: 32px;
+}
+
+
+.info-wrap .info {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-family: var(--font-en);
+  font-weight: 300;
+  line-height: 120%;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.mobile-text-wrap {
-  font-size: 34px;
+.info-wrap .info img {
+  width: 36px;
+  margin-bottom: 20px;
+      animation: rotate 10s linear infinite;
+  transform-origin: center;
 }
-.mobile-couple-name-wrap {
-  font-size: 24px;
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-.mobile-couple-name-wrap span {
-  padding: 0 5px;
+.info-wrap .info p:last-child {
+  font-family: var(--font-kr);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
 }
+
 </style>

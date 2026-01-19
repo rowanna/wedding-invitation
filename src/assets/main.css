@@ -4,6 +4,7 @@
   --color-secondary: #51504f;
   --color-red: #dc340c;
   --color-light: #fef0e5;
+  --color-main-bg-light: #f0ebe7;
   --color-white: #ffffff;
   --color-border: #e0d8c9;
 
@@ -12,6 +13,7 @@
   --font-kr-serif: "Noto Serif KR", sans-serif;
   --font-en: "Epilogue", sans-serif;
   --font-serif: "EB Garamond", serif;
+  --font-serif2: "Instrument Serif", serif;
 }
 
 html {
