@@ -38,10 +38,10 @@ const isFaded = ref(false);
 const startFade = () => {
   isFaded.value = true;
   setTimeout(() => {
-    const intro = document.querySelector(".intro-section");
-    if (intro) {
-      intro.style.display = "none";
-    }
+    // const intro = document.querySelector(".intro-section");
+    // if (intro) {
+    //   intro.style.display = "none";
+    // }
   }, 1000); // Match this with the CSS transition duration
 };
 
