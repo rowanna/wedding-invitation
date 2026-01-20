@@ -77,6 +77,7 @@
 <style scoped>
 .section {
   font-family: var(--font-serif2);
+  padding-top: 110px;
 }
 h2 {
   font-size: 36px;

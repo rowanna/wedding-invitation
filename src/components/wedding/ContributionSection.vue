@@ -82,7 +82,7 @@ const toggle = (section: string) => {
 
 <style scoped>
 .thanksto-info {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .thanksto-info > p {
   font-family: var(--font-kr-serif);

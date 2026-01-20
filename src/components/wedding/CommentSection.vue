@@ -17,21 +17,23 @@
         </p>
       </div>
 
-      <p v-reveal class="fadeTarget">
-        저희는 모든 분들께서 결혼 전시를<br />
-        부담없이 편안한 마음으로 즐기시길 원합니다.
-      </p>
-      <p v-reveal class="fadeTarget">
-        거리가 멀거나 방문이 어려우신<br />
-        경우에는 모바일 전시회로 함께해 주셔도<br />
-        감사한 마음입니다.
-      </p>
-      <p v-reveal class="fadeTarget">
-        한 분 한 분의 귀한 걸음과<br />
-        축복해 주시는 마음 잊지 않고<br />
-        오래도록 간직하겠습니다.
-      </p>
-      <p v-reveal class="fadeTarget">진심으로 감사드립니다.</p>
+      <div class="comment-last">
+        <p v-reveal class="fadeTarget">
+          저희는 모든 분들께서 결혼 전시를<br />
+          부담없이 편안한 마음으로 즐기시길 원합니다.
+        </p>
+        <p v-reveal class="fadeTarget">
+          거리가 멀거나 방문이 어려우신<br />
+          경우에는 모바일 전시회로 함께해 주셔도<br />
+          감사한 마음입니다.
+        </p>
+        <p v-reveal class="fadeTarget">
+          한 분 한 분의 귀한 걸음과<br />
+          축복해 주시는 마음 잊지 않고<br />
+          오래도록 간직하겠습니다.
+        </p>
+        <p v-reveal class="fadeTarget">진심으로 감사드립니다.</p>
+      </div>
     </div>
   </section>
 </template>
@@ -51,6 +53,9 @@ p {
   padding: 2rem 0;
   border-top: 1px solid var(--color-red);
   border-bottom: 1px solid var(--color-red);
+}
+.comment-last {
+  padding: 2rem 0;
 }
 .comment p {
   text-align: left;
