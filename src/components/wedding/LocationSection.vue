@@ -40,26 +40,27 @@
           </div>
         </div>
 
-        <div class="info-container">
-          <h3>🚉 대중교통</h3>
-          <p>
-            안국역 6번출구 도보 5분 <br />
-            (건물 입구에 코끼리베이글 인사동점이 있습니다)
-          </p>
-          <span>* 안내요원이 배치되어 길안내 예정입니다.</span>
-        </div>
-        <div class="info-container">
-          <h3>🅿️ 주차장 정보</h3>
-          <p>
-            인사동 특성상 주차 공간이 매우 제한적입니다.<br />
-            건물 내 주차장은 제공되지 않으며,<br />
-            대중교통 이용을 권장합니다.<br /><br />
+        <div class="way-info-container">
+          <div class="way-info-wrap">
+            <h3>🚉 대중교통</h3>
+            <p>
+              안국역 6번출구 도보 5분 <br />
+              (건물 입구에 코끼리베이글 인사동점이 있습니다)
+            </p>
+            <span>* 안내요원이 배치되어 길안내 예정입니다.</span>
+          </div>
+          <div class="way-info-wrap">
+            <h3>🅿️ 주차장 정보</h3>
+            <p>
+              인사동 특성상 주차 공간이 매우 제한적입니다.<br />
+              건물 내 주차장은 제공되지 않으며,<br />
+              대중교통 이용을 권장합니다.<br /><br />
 
-            자차 이용시에는 인근 유료주차장을<br />
-            이용해주시기 바랍니다.
-          </p>
-          <br />
-          <div class="small-info">
+              자차 이용시에는 인근 유료주차장을<br />
+              이용해주시기 바랍니다.
+            </p>
+          </div>
+          <div class="way-info-wrap">
             <h4>🚗 근처 주차장 안내</h4>
             <ul>
               <li>SK건설빌딩 주차장 (도보 3분)</li>
@@ -142,5 +143,38 @@ h2 {
   font-size: 2rem;
   display: block;
   margin-bottom: 0.5rem;
+}
+
+.way-info-container {
+  margin: 2rem;
+  padding: 1rem;
+  border-top: 1px solid var(--color-red);
+  border-bottom: 1px solid var(--color-red);
+}
+.way-info-wrap {
+  border-bottom: 1px solid var(--color-secondary);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.way-info-wrap h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.way-info-wrap h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.way-info-wrap p {
+  font-weight: 500;
+}
+.way-info-wrap li {
+  font-size: 0.8rem;
+}
+.way-info-wrap span {
+  font-size: 0.7rem;
 }
 </style>
