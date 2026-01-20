@@ -7,38 +7,41 @@
       <div class="contribution-container">
         <button class="accordion-header" @click="toggle('groom')">
           <h3>🤵 신랑 부모 측</h3>
-          <span class="arrow" :class="{ 'is-active': activeSection === 'groom' }">▼</span>
+          <span
+            class="arrow"
+            :class="{ 'is-active': activeSection === 'groom' }"
+            >▼</span
+          >
         </button>
         <div v-if="activeSection === 'groom'" class="accordion-content">
-          <p>
-            이동하 신한은행 110-448-854490
-          </p>
-    <p>
-            박형옥 신한은행 110-347-358868
-          </p>
-    
+          <p>이동하 신한은행 110-448-854490</p>
+          <p>박형옥 신한은행 110-347-358868</p>
         </div>
       </div>
 
       <div class="contribution-container">
         <button class="accordion-header" @click="toggle('bride')">
           <h3>👰 신부 부모 측</h3>
-          <span class="arrow" :class="{ 'is-active': activeSection === 'bride' }">▼</span>
+          <span
+            class="arrow"
+            :class="{ 'is-active': activeSection === 'bride' }"
+            >▼</span
+          >
         </button>
         <div v-if="activeSection === 'bride'" class="accordion-content">
-          <p>
-            나학수 광주은행 072-121-491155
-          </p>
-    <p>
-            김용수 우리은행 1002-216-901646
-          </p>
+          <p>나학수 광주은행 072-121-491155</p>
+          <p>김용수 우리은행 1002-216-901646</p>
         </div>
       </div>
 
       <div class="contribution-container">
         <button class="accordion-header" @click="toggle('couple')">
           <h3>🤵 신랑 신부 측 👰</h3>
-          <span class="arrow" :class="{ 'is-active': activeSection === 'couple' }">▼</span>
+          <span
+            class="arrow"
+            :class="{ 'is-active': activeSection === 'couple' }"
+            >▼</span
+          >
         </button>
         <div v-if="activeSection === 'couple'" class="accordion-content">
           <p>이재인 토스뱅크 1000-8855-0663</p>
@@ -50,7 +53,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 
 // 현재 어떤 섹션이 열려 있는지 저장하는 변수 (null이면 모두 닫힘)
 const activeSection = ref<string | null>(null);

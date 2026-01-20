@@ -42,7 +42,7 @@ body {
   padding: 110px 0;
 }
 .light-bg {
-  background-color: var(--color-light);  
+  background-color: var(--color-light);
 }
 .container {
   max-width: 500px;
@@ -59,7 +59,6 @@ body {
   opacity: 1;
   transform: translate(0, 0);
 }
-
 
 .title-section {
   width: 100%;
