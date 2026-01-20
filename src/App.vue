@@ -2,7 +2,7 @@
 import HeroSection from "@/components/wedding/HeroSection.vue";
 import LocationSection from "@/components/wedding/LocationSection.vue";
 import WayToComeSection from "@/components/wedding/WayToComeSection.vue";
-import DateSection from "@/components/wedding/DateSection.vue";
+// import DateSection from "@/components/wedding/DateSection.vue";
 import MealSection from "@/components/wedding/MealSection.vue";
 import CommentSection from "@/components/wedding/CommentSection.vue";
 import ContributionSection from "@/components/wedding/ContributionSection.vue";
@@ -17,7 +17,7 @@ import IntroSection from "@/components/wedding/IntroSection.vue";
     <GoToExhibitionSection />
   <LocationSection />
   <WayToComeSection />
-  <DateSection />
+  // <DateSection />
   <MealSection />
   <ContributionSection />
   

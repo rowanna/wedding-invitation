@@ -2,10 +2,13 @@
   <section class="section">
     <div class="container">
       <div>
-        <span class="point-text">WEDDING EXHIBITION</span>
-        <h2 class="">Location</h2>
+        // <span class="point-text">WEDDING EXHIBITION</span>
+        <h2 class="">WEDDING EXHIBITION</h2>
 
         <div class="adress-container">
+          <h3>
+            2026년 3월 7일 토요일 11tl - 15시
+          </h3>
           <h3>
             인사동 마루아트센터 2층<br />
             오미갤러리
@@ -15,6 +18,11 @@
             마루아트센터 2층 오미갤러리
           </p>
           <span>* 공간이 협소한 관계로 화환은 정중히 사양합니다.</span>
+    <span>
+        * 시간이 따로 정해져 있지 않지만 아래의 시간에 맞춰 방문을 권장합니다. <br />
+        *11:00-13:00 (가족) <br />
+        *13:00-15:00 (지인, 동료, 친구) <br />
+      </span>
         </div>
         <div class="map-container w-full mb-[40px]">
           <div class="map-placeholder">
@@ -44,6 +52,8 @@ h2 {
   font-weight: 600;
   letter-spacing: 1%;
   margin-bottom: 24px;
+font-family: var(--font-serif2);
+  color: var(--color-red);
 }
 .adress-container {
   display: flex;
