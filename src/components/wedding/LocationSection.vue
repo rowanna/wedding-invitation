@@ -17,10 +17,13 @@
               <p>마루아트센터 2층 오미갤러리</p>
             </div>
 
-            <p>
-              📆 시간이 따로 정해져 있지 않지만 아래의 시간에 맞춰 방문을
-              권장합니다.
-            </p>
+            <div class="place">
+              <i class="fas fa-calendar"></i>
+              <p>
+                시간이 따로 정해져 있지 않지만 아래의 시간에 맞춰 방문을
+                권장합니다.
+              </p>
+            </div>
           </div>
 
           <span>
@@ -53,12 +56,17 @@ h2 {
   margin-bottom: 3rem;
   font-family: var(--font-serif2);
   color: var(--color-red);
+  padding: 1rem;
+  border-top: 1px solid var(--color-red);
+  border-bottom: 1px solid var(--color-red);
 }
 .adress-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
+  border-left: 1px solid var(--color-red);
+  border-right: 1px solid var(--color-red);
 }
 .adress-container h3 {
   font-size: 18px;
