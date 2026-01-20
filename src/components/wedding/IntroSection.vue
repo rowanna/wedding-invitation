@@ -79,7 +79,7 @@ onMounted(() => {
 }
 
 .fadeUptoDownTarget {
-  transition: transform 1s ease-out;
+  transition: transform 3s ease-out;
   transform: translate(0, -50%);
   opacity: 0;
 }
