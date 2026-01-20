@@ -146,15 +146,18 @@ h2 {
 }
 
 .way-info-container {
-  margin: 2rem;
+  margin: 2rem 0;
   padding: 1rem;
   border-top: 1px solid var(--color-red);
   border-bottom: 1px solid var(--color-red);
 }
 .way-info-wrap {
-  border-bottom: 1px solid var(--color-secondary);
-  padding: 1rem;
-  margin: 1rem;
+  border-bottom: 1px solid #666;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+.way-info-wrap:last-child {
+  border-bottom: none;
 }
 
 .way-info-wrap h3 {

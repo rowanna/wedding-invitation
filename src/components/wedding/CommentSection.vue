@@ -48,7 +48,7 @@ p {
   margin: 1rem 0;
 }
 .comment {
-  padding: 2rem;
+  padding: 2rem 0;
   border-top: 1px solid var(--color-red);
   border-bottom: 1px solid var(--color-red);
 }
