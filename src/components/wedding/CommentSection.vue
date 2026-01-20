@@ -32,7 +32,6 @@
 </template>
 
 <script setup lang="ts">
-<script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
 
 // 1. 상태값 타입 추론 (boolean)
