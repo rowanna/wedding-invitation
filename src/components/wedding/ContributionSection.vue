@@ -1,12 +1,10 @@
 <template>
-  <section class="section">
+    <div class="title-section">
+    <h2>THANKS TO</h2>
+  </div>
+  <section class="section light-bg">
     <div class="container">
-      <div>
-        <div class="title-wrap">
-          <span class="point-text">WEDDING EXHIBITION</span>
-          <h2>마음 전하실 곳</h2>
-        </div>
-
+      
         <div class="contribution-container">
           <h3>🤵신랑 부모 측</h3>
           <p>
@@ -26,7 +24,9 @@
           <p>이재인 토스뱅크 1000-8855-0663</p>
           <span class="text-sm">* 축의금 중 일부는 기부 할 예정입니다</span>
         </div>
-      </div>
+
+    
+
     </div>
   </section>
 </template>
@@ -36,29 +36,13 @@
 </script>
 
 <style scoped>
-.point-text {
-  font-size: 16px;
-  font-family: var(--font-serif);
-  color: var(--color-red);
-  line-height: 150%;
-}
-h2 {
-  font-size: 36px;
-  line-height: 120%;
-  font-weight: 600;
-  letter-spacing: 1%;
-}
-.title-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 24px;
-}
+
 .contribution-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 24px;
+    font-family: var(--font-kr-serif);
 }
 .contribution-container h3 {
   font-size: 18px;
