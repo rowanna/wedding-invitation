@@ -90,7 +90,7 @@ onMounted(() => {
 }
 .fadeUptoDownTarget.fade-down{
     opacity: 1;
-  transform: translate(0, -50%);
+  transform: translate(0, 0);
 }
 
 .container {
