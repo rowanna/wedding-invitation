@@ -19,9 +19,10 @@ app.directive("reveal", {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("fade-down");
-        } else {
-          entry.target.classList.remove("fade-down");
         }
+        // else {
+        //   entry.target.classList.remove("fade-down");
+        // }
       });
     };
 

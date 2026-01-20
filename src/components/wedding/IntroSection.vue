@@ -5,15 +5,17 @@
     @click="startFade"
   >
     <div class="container">
-      <div class="intro-content">
+      <div
+        class="intro-content"
+      >
         <img
           src="@/assets/intro-image.png"
           alt="Wedding Couple"
           class="couple-image fadeTarget"
-          v-reveal
+     v-reveal
         />
 
-        <div v-reveal class="intro-names-container fadeTarget">
+        <div class="intro-names-container">
           <div class="groom">
             <span class="role">GROOM</span>
             <p class="name">이재인</p>
@@ -44,6 +46,7 @@ const startFade = () => {
 // Auto-fade after 3 seconds
 onMounted(() => {
   setTimeout(startFade, 3000);
+
 });
 </script>
 
