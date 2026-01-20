@@ -32,45 +32,58 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
 
-const isActive = ref(false);
-const targetElement = ref(null);
-let observer = null;
+// 1. 상태값 타입 추론 (boolean)
+const isActive = ref<boolean>(false);
+
+// 2. DOM 요소 타입 정의 (HTMLDivElement 또는 null)
+// 만약 div가 아니라면 HTMLElement로 범용적으로 설정할 수 있습니다.
+const targetElement = ref<HTMLDivElement | null>(null);
+
+// 3. Observer 타입 정의 (IntersectionObserver 또는 null)
+let observer: IntersectionObserver | null = null;
 
 onMounted(() => {
-  // rootMargin: '상단 우측 하단 좌측' 순서
-  // 하단에서 1/3(33%) 지점을 기준으로 삼기 위해 하단 마진을 -33%로 설정합니다.
-  const options = {
+  // rootMargin: 상단 우측 하단 좌측 순서
+  const options: IntersectionObserverInit = {
     root: null, // 브라우저 뷰포트 기준
     rootMargin: '0px 0px -33% 0px', 
-    threshold: 0 // 대상 요소가 1픽셀이라도 기준선에 닿으면 실행
+    threshold: 0 
   };
 
-  const callback = (entries) => {
-    entries.forEach((entry) => {
+  const callback: IntersectionObserverCallback = (entries) => {
+    entries.forEach((entry: IntersectionObserverEntry) => {
       if (entry.isIntersecting) {
-        // 요소가 화면 2/3 지점 위로 올라왔을 때
         isActive.value = true;
-        // 한 번만 실행하고 싶다면 관찰을 중단할 수 있습니다.
-        // observer.unobserve(entry.target);
       } else {
-        // 다시 아래로 내려가면 클래스를 제거하고 싶을 경우
         isActive.value = false;
       }
     });
   };
 
+  // 인스턴스 생성
   observer = new IntersectionObserver(callback, options);
 
+  // 4. 관찰 시작 (targetElement가 존재할 때만)
   if (targetElement.value) {
     observer.observe(targetElement.value);
   }
 });
 
 onUnmounted(() => {
-  if (observer) observer.disconnect();
+  if (observer) {
+    observer.disconnect();
+  }
 });
+</script>
+
+<template>
+  <div ref="targetElement" :class="{ 'is-active': isActive }">
+    감시 대상 요소
+  </div>
+</template>
 </script>
 
 <style scoped>
