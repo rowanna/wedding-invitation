@@ -24,7 +24,11 @@
           <img src="@/assets/deco-img.png" alt="Deco Image" />
         </div> -->
         <div class="info">
-          <img class="info-deco" src="@/assets/info-deco.png" alt="Deco Image" />
+          <img
+            class="info-deco"
+            src="@/assets/info-deco.png"
+            alt="Deco Image"
+          />
           <p>2026. 03. 07 SAT<br />11:00 - 15:00</p>
           <p>인사동 마루아트센터<br />2층 오미갤러리</p>
         </div>
@@ -62,9 +66,8 @@ section {
   position: absolute;
   bottom: 0px;
   right: -40px;
-        animation: dudungsil 2s linear infinite;
+  animation: dudungsil 2s linear infinite;
   transform-origin: center;
-
 }
 @keyframes dudungsil {
   0% {
@@ -110,7 +113,6 @@ section {
   margin-bottom: 32px;
 }
 
-
 .info-wrap .info {
   position: absolute;
   bottom: 50px;
@@ -129,7 +131,7 @@ section {
 .info-wrap .info img {
   width: 36px;
   margin-bottom: 20px;
-      animation: rotate 10s linear infinite;
+  animation: rotate 10s linear infinite;
   transform-origin: center;
 }
 
@@ -147,5 +149,4 @@ section {
   line-height: 150%;
   font-weight: 500;
 }
-
 </style>

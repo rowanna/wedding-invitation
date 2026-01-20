@@ -5,19 +5,15 @@
     @click="startFade"
   >
     <div class="container">
-      <div :class="{
-    'intro-content': true,
-        'fadeUptoDownTarget': true,
-        'fade-down' : isDownFaded
-    
-    }">
+      <div class="intro-content">
         <img
           src="@/assets/intro-image.png"
           alt="Wedding Couple"
-          class="couple-image"
+          class="couple-image fadeTarget"
+          v-reveal
         />
 
-        <div class="intro-names-container">
+        <div v-reveal class="intro-names-container fadeTarget">
           <div class="groom">
             <span class="role">GROOM</span>
             <p class="name">이재인</p>
@@ -40,19 +36,14 @@ import { ref, onMounted } from "vue";
 
 const isFaded = ref(false);
 const isDownFaded = ref(false);
-    
+
 const startFade = () => {
   isFaded.value = true;
 };
-const startFadeDown = () => {
-    isDownFaded.value = true;
-    
-}
 
 // Auto-fade after 3 seconds
 onMounted(() => {
   setTimeout(startFade, 3000);
-  setTimeout(startFadeDown, 1000);
 });
 </script>
 
@@ -86,10 +77,10 @@ onMounted(() => {
 .fadeUptoDownTarget {
   transition: transform 1s ease-out;
   transform: translate(0, -50%);
-    opacity: 0;
+  opacity: 0;
 }
-.fadeUptoDownTarget.fade-down{
-    opacity: 1;
+.fadeUptoDownTarget.fade-down {
+  opacity: 1;
   transform: translate(0, 0);
 }
 

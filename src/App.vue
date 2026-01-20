@@ -18,18 +18,7 @@ import IntroSection from "@/components/wedding/IntroSection.vue";
   <WayToComeSection />
   <DateSection />
   <MealSection />
-  
+
   <ContributionSection />
   <GoToExhibitionSection />
 </template>
-
-<style>
-.section {
-  padding: 110px 0;
-}
-.container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 23px;
-}
-</style>
