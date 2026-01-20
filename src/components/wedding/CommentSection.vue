@@ -47,6 +47,11 @@ p {
   letter-spacing: 0.02rem;
   margin-bottom: 2rem;
 }
+.comment {
+  padding: 2rem;
+  border-top: 1px solid var(--color-red);
+  border-bottom: 1px solid var(--color-red);
+}
 .comment p {
   text-align: left;
 }

@@ -5,19 +5,19 @@
         <h2 class="">WEDDING EXHIBITION</h2>
 
         <div class="adress-container">
-          <!--<div>
-              <h3>2026년 3월 7일 토요일 11시 - 15시</h3>
-              <h3>인사동 마루아트센터 2층 오미갤러리</h3>
-            </div>-->
+          <div>
+            <h3>2026년 3월 7일 토요일 11시 - 15시</h3>
+            <h3>인사동 마루아트센터 2층 오미갤러리</h3>
+          </div>
 
           <div class="info-wrap">
-            <div class="place">
+            <div class="info">
               <i class="fas fa-map-marker-alt"></i>
               <p>서울특별시 종로구 인사동길 35-4</p>
               <p>마루아트센터 2층 오미갤러리</p>
             </div>
 
-            <div class="place">
+            <div class="info">
               <i class="fas fa-calendar"></i>
               <p>
                 시간이 따로 정해져 있지 않지만 아래의 시간에 맞춰 방문을
@@ -65,7 +65,7 @@ h2 {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
-    padding: 0 2rem;
+  padding: 0 2rem;
   border-left: 1px solid var(--color-red);
   border-right: 1px solid var(--color-red);
 }
@@ -74,6 +74,9 @@ h2 {
   line-height: 140%;
   font-weight: 700;
   letter-spacing: 1%;
+}
+.info {
+  margin-bottom: 1rem;
 }
 .adress-container p {
   font-size: 16px;
