@@ -4,15 +4,18 @@
   </div>
   <section class="section">
     <div class="container">
-      <p>
-        저희는 모든 분들께서 결혼 전시를<br />
-        부담없이 편안한 마음으로 즐기시길 원합니다.
-      </p>
-      <p>
-        그럼에도 불구하고 마음을 전하고자 하시는 분들을 위해<br />
-        계좌번호를 기재하였습니다.<br />
-        너그러운 마음으로 양해 부탁드립니다.
-      </p>
+      <div class="thanksto-info">
+        <p>
+          저희는 모든 분들께서 결혼 전시를<br />
+          부담없이 편안한 마음으로 즐기시길 원합니다.
+        </p>
+        <p>
+          그럼에도 불구하고 마음을 전하고자 하시는 분들을 위해<br />
+          계좌번호를 기재하였습니다.<br />
+          너그러운 마음으로 양해 부탁드립니다.
+        </p>
+      </div>
+
       <div class="contribution-container">
         <button class="accordion-header" @click="toggle('groom')">
           <h3>🤵 신랑 부모 측</h3>
@@ -78,10 +81,14 @@ const toggle = (section: string) => {
 </script>
 
 <style scoped>
-.cpntainer > p {
+.thanksto-info {
+  margin-bottom: 1rem;
+}
+.thanksto-info > p {
   font-family: var(--font-kr-serif);
   margin-bottom: 1rem;
 }
+
 .contribution-container {
   margin-bottom: 1rem;
   border-bottom: 1px solid #eee; /* 구분선 추가 */
