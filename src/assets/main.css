@@ -79,7 +79,7 @@ body {
   background-image: url("@/assets/title-deco.png");
 }
 
-h2 {
+.title-section h2 {
   font-family: var(--font-serif2);
   font-size: 32px;
   font-weight: 500;
