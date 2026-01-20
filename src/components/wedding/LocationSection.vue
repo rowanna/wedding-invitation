@@ -65,6 +65,7 @@ h2 {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
+    padding: 0 2rem;
   border-left: 1px solid var(--color-red);
   border-right: 1px solid var(--color-red);
 }

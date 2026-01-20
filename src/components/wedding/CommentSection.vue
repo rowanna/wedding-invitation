@@ -2,7 +2,7 @@
   <div class="title-section">
     <h2>COMMENT</h2>
   </div>
-  <section class="section light-bg">
+  <section class="section">
     <div class="container">
       <div class="comment">
         <p v-reveal class="fadeTarget">
