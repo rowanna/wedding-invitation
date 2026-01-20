@@ -5,25 +5,22 @@
     <section class="section">
     <div class="container">
     <p 
-    ref="targetElement"
-    :class="{
-    'fadeUptoDownTarget': true,
-    'fade-down' : isActive
-    }">
+    v-reveal
+    class="fadeUptoDownTarget">
     저희는 모든 분들께서 결혼 전시를<br />
     부담없이 편안한 마음으로 즐기시길 원합니다.
     </p>
-    <p>
+    <p v-reveal>
     거리가 멀거나 방문이 어려우신<br />
     경우에는 모바일 전시회로 함께해 주셔도<br />
     감사한 마음입니다.
     </p>
-    <p>
+    <p v-reveal>
     한 분 한 분의 귀한 걸음과<br />
     축복해 주시는 마음 잊지 않고<br />
     오래도록 간직하겠습니다.
     </p>
-    <p>
+    <p v-reveal>
     진심으로 감사드립니다.
     </p>
 
@@ -31,52 +28,27 @@
     </section>
     </template>
 
-    <script setup lang="ts">
-    import { ref, onMounted, onUnmounted } from "vue";
-
-// 1. 상태값 타입 추론 (boolean)
-const isActive = ref<boolean>(false);
-
-// 2. DOM 요소 타입 정의 (HTMLDivElement 또는 null)
-// 만약 div가 아니라면 HTMLElement로 범용적으로 설정할 수 있습니다.
-const targetElement = ref<HTMLDivElement | null>(null);
-
-// 3. Observer 타입 정의 (IntersectionObserver 또는 null)
-let observer: IntersectionObserver | null = null;
-
-onMounted(() => {
-          // rootMargin: 상단 우측 하단 좌측 순서
-          const options: IntersectionObserverInit = {
-    root: null, // 브라우저 뷰포트 기준
-    rootMargin: '0px 0px -33% 0px', 
-    threshold: 0 
-    };
-
-const callback: IntersectionObserverCallback = (entries) => {
-    entries.forEach((entry: IntersectionObserverEntry) => {
-    if (entry.isIntersecting) {
-        isActive.value = true;
-    } else {
-        isActive.value = false;
-    }
-});
+<script setup lang="ts">
+// 디렉티브 정의: v-reveal이라는 이름으로 사용 가능
+const vReveal = {
+  mounted: (el: HTMLElement) => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-down');
+          } else {
+            entry.target.classList.remove('fade-down');
+          }
+        });
+      },
+      { rootMargin: '0px 0px -33% 0px', threshold: 0.1 }
+    );
+    observer.observe(el);
+  }
 };
-
-// 인스턴스 생성
-observer = new IntersectionObserver(callback, options);
-
-// 4. 관찰 시작 (targetElement가 존재할 때만)
-if (targetElement.value) {
-    observer.observe(targetElement.value);
-}
-});
-
-onUnmounted(() => {
-    if (observer) {
-        observer.disconnect();
-    }
-});
 </script>
+
 
 
     <style scoped>
