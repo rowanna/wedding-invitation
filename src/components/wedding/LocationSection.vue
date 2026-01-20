@@ -5,15 +5,24 @@
         <h2 class="">WEDDING EXHIBITION</h2>
 
         <div class="adress-container">
-          <h3>2026년 3월 7일 토요일 11시 - 15시</h3>
-          <h3>인사동 마루아트센터 2층 오미갤러리</h3>
-          <p>
-            서울특별시 종로구 인사동길 35-4<br />
-            마루아트센터 2층 오미갤러리
-          </p>
-          <p>
-            시간이 따로 정해져 있지 않지만 아래의 시간에 맞춰 방문을 권장합니다.
-          </p>
+          <!--<div>
+              <h3>2026년 3월 7일 토요일 11시 - 15시</h3>
+              <h3>인사동 마루아트센터 2층 오미갤러리</h3>
+            </div>-->
+
+          <div class="info-wrap">
+            <div class="place">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>서울특별시 종로구 인사동길 35-4</p>
+              <p>마루아트센터 2층 오미갤러리</p>
+            </div>
+
+            <p>
+              📆 시간이 따로 정해져 있지 않지만 아래의 시간에 맞춰 방문을
+              권장합니다.
+            </p>
+          </div>
+
           <span>
             *11:00-13:00 (가족) <br />
             *13:00-15:00 (지인, 동료, 친구) <br />
@@ -32,16 +41,9 @@
   </section>
 </template>
 
-<script setup lang="ts">
-// Component logic goes here
-</script>
-
 <style scoped>
-.point-text {
-  font-size: 16px;
-  font-family: var(--font-serif);
-  color: var(--color-red);
-  line-height: 150%;
+.section {
+  font-family: var(--font-serif2);
 }
 h2 {
   font-size: 36px;

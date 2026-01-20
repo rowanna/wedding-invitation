@@ -11,7 +11,7 @@ app.directive("reveal", {
   mounted(el: HTMLElement) {
     const options: IntersectionObserverInit = {
       root: null,
-      rootMargin: "0px 0px -33% 0px",
+      rootMargin: "0px 0px -20% 0px",
       threshold: 0.1,
     };
 
