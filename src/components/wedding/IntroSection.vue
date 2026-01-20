@@ -63,6 +63,7 @@ onMounted(() => {
   min-width: 100vw;
   width: 100%;
   height: 100%;
+  max-width: 375px;
   background-color: var(--color-light);
   display: flex;
   justify-content: center;
