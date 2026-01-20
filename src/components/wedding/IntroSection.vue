@@ -5,7 +5,7 @@
     @click="startFade"
   >
     <div class="container">
-      <div class="intro-content">
+      <div class="intro-content fadeUptoDownTarget fade-down">
         <img
           src="@/assets/intro-image.png"
           alt="Wedding Couple"
@@ -55,6 +55,8 @@ onMounted(() => {
 .intro-section {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
   z-index: 1000;
   min-height: 150vw;
@@ -74,6 +76,16 @@ onMounted(() => {
 .intro-section.fade-out {
   opacity: 0;
   pointer-events: none;
+}
+
+.fadeUptoDownTarget {
+  transition: transform 1s ease-out;
+  transform: translate(0, -50%);
+  opacity: 0;
+}
+.fadeUptoDownTarget.fade-down{
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .container {
