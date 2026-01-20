@@ -45,7 +45,7 @@ p {
   font-family: var(--font-kr-serif);
   line-height: 180%;
   letter-spacing: 0.02rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 .comment {
   padding: 2rem;

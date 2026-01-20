@@ -38,7 +38,6 @@ const goToExhibition = () => {
   position: absolute;
   bottom: 23px;
   left: 23px;
-  font-family: var(--font-kr-serif);
 }
 h2 {
   font-size: 36px;
