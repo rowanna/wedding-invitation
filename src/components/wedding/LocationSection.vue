@@ -43,10 +43,8 @@
         <div class="way-info-container">
           <div class="way-info-wrap">
             <h3>🚉 대중교통</h3>
-            <p>
-              안국역 6번출구 도보 5분 <br />
-              (건물 입구에 코끼리베이글 인사동점이 있습니다)
-            </p>
+            <p>안국역 6번출구 도보 5분</p>
+            <span>(건물 입구에 코끼리베이글 인사동점이 있습니다)</span>
             <span>* 안내요원이 배치되어 길안내 예정입니다.</span>
           </div>
           <div class="way-info-wrap">
@@ -55,10 +53,11 @@
               인사동 특성상 주차 공간이 매우 제한적입니다.<br />
               건물 내 주차장은 제공되지 않으며,<br />
               대중교통 이용을 권장합니다.<br /><br />
-
-              자차 이용시에는 인근 유료주차장을<br />
-              이용해주시기 바랍니다.
             </p>
+            <span
+              >자차 이용시에는 인근 유료주차장을<br />
+              이용해주시기 바랍니다.</span
+            >
           </div>
           <div class="way-info-wrap">
             <h4>🚗 근처 주차장 안내</h4>
@@ -161,7 +160,7 @@ h2 {
 }
 
 .way-info-wrap h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
