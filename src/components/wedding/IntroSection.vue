@@ -5,7 +5,12 @@
     @click="startFade"
   >
     <div class="container">
-      <div class="intro-content fadeUptoDownTarget fade-down">
+      <div :class="{
+    'intro-content': true,
+        'fadeUptoDownTarget': true,
+        'fade-down' : isDownFaded
+    
+    }">
         <img
           src="@/assets/intro-image.png"
           alt="Wedding Couple"
@@ -34,20 +39,20 @@
 import { ref, onMounted } from "vue";
 
 const isFaded = ref(false);
-
+const isDownFaded = ref(false);
+    
 const startFade = () => {
   isFaded.value = true;
-  setTimeout(() => {
-    // const intro = document.querySelector(".intro-section");
-    // if (intro) {
-    //   intro.style.display = "none";
-    // }
-  }, 1000); // Match this with the CSS transition duration
 };
+const startFadeDown = () => {
+    isDownFaded.value = true;
+    
+}
 
 // Auto-fade after 3 seconds
 onMounted(() => {
   setTimeout(startFade, 3000);
+  setTimeout(startFadeDown, 1000);
 });
 </script>
 
@@ -79,13 +84,13 @@ onMounted(() => {
 }
 
 .fadeUptoDownTarget {
-  transition: transform 3s ease-out;
+  transition: transform 1s ease-out;
   transform: translate(0, -50%);
-  opacity: 0;
+    opacity: 0;
 }
 .fadeUptoDownTarget.fade-down{
-  transform: translate(0, 0);
-  opacity: 1;
+    opacity: 1;
+  transform: translate(0, -50%);
 }
 
 .container {
