@@ -11,7 +11,7 @@
         <img
           src="@/assets/intro-image.png"
           alt="Wedding Couple"
-          class="couple-image fadeTarget"
+          class="couple-image"
      v-reveal
         />
 

@@ -41,7 +41,7 @@ body {
 .section {
   padding: 110px 0;
 }
-.section.light-bg {
+.light-bg {
   background-color: var(--color-light);  
 }
 .container {
