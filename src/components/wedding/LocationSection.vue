@@ -23,20 +23,18 @@
                 시간이 따로 정해져 있지 않지만 아래의 시간에 맞춰 방문을
                 권장합니다.
               </p>
+              <span> *11:00-13:00 (가족) <br /> </span>
+              <span> *13:00-15:00 (지인, 동료, 친구) <br /> </span>
             </div>
           </div>
 
-          <span>
-            *11:00-13:00 (가족) <br />
-            *13:00-15:00 (지인, 동료, 친구) <br />
-          </span>
-          <span>* 공간이 협소한 관계로 화환은 정중히 사양합니다.</span>
+          <p>* 공간이 협소한 관계로 화환은 정중히 사양합니다.</p>
         </div>
 
-        <div class="map-container w-full mb-[40px]">
+        <div @click="goToMap" class="map-container w-full mb-[40px]">
           <div class="map-placeholder">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>지도가 여기에 표시됩니다</p>
+            <!--<i class="fas fa-map-marker-alt"></i>
+            <p>지도가 여기에 표시됩니다</p>-->
           </div>
         </div>
 
@@ -44,7 +42,7 @@
           <div class="way-info-wrap">
             <h3>🚉 대중교통</h3>
             <p>안국역 6번출구 도보 5분</p>
-            <span>(건물 입구에 코끼리베이글 인사동점이 있습니다)</span>
+            <span>(건물 입구에 코끼리베이글 인사동점이 있습니다)</span><br />
             <span>* 안내요원이 배치되어 길안내 예정입니다.</span>
           </div>
           <div class="way-info-wrap">
@@ -73,7 +71,11 @@
     </div>
   </section>
 </template>
-
+<script setup lang="ts">
+const goToMap = () => {
+  window.open("https://naver.me/GWiYx5ot", "_blank");
+};
+</script>
 <style scoped>
 .section {
   font-family: var(--font-serif2);
@@ -135,8 +137,13 @@ h2 {
 
 .map-placeholder {
   text-align: center;
-  color: #666;
-  font-size: 0.9rem;
+  background-image: url("@/assets/map-img.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* 또는 cover (영역을 꽉 채울 때) */
+
+  width: 100%;
+  min-height: 200px;
 }
 
 .map-placeholder i {
