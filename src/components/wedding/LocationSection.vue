@@ -6,8 +6,8 @@
 
         <div class="adress-container">
           <div>
-            <h3>2026년 3월 7일 토요일 11시 - 15시</h3>
-            <h3>인사동 마루아트센터 2층 오미갤러리</h3>
+            <h3>2026년 3월 7일 토요일<br /> 11시 - 15시</h3>
+            <h3>인사동 마루아트센터<br /> 2층 오미갤러리</h3>
           </div>
 
           <div class="info-wrap">
@@ -44,17 +44,21 @@
             <p>안국역 6번출구 도보 5분</p>
             <span>(건물 입구에 코끼리베이글 인사동점이 있습니다)</span><br />
             <span>* 안내요원이 배치되어 길안내 예정입니다.</span>
+            <br /><br />
+            <p>택시타고 오실 경우</p>
+            <p>[더 프리마 호텔 종로점]으로 얘기해주세요.</p>
+            <span>* 도착 후 전화 주시면 안내요원이 안내해드립니다.</span>
           </div>
           <div class="way-info-wrap">
             <h3>🅿️ 주차장 정보</h3>
             <p>
-              인사동 특성상 주차 공간이 매우 제한적입니다.<br />
+              인사동 특성상 주차 공간이<br />매우 제한적입니다.<br />
               건물 내 주차장은 제공되지 않으며,<br />
               대중교통 이용을 권장합니다.<br /><br />
             </p>
             <span
               >자차 이용시에는 인근 유료주차장을<br />
-              이용해주시기 바랍니다.</span
+              이용해주시기 바랍니다.  (하단 참고)</span
             >
           </div>
           <div class="way-info-wrap">
@@ -64,7 +68,7 @@
               <li>안녕인사동 주차장 (도보 3분)</li>
               <li>파킹프라자 인사동점 (도보 3분)</li>
             </ul>
-            <span>주차비 1만원을 지원해드립니다.</span>
+            <span class="parking-support">* 주차비 1만원을 지원해드립니다.</span>
           </div>
         </div>
       </div>
@@ -186,5 +190,8 @@ h2 {
 }
 .way-info-wrap span {
   font-size: 0.7rem;
+}
+.parking-support {
+  font-weight: 700;
 }
 </style>

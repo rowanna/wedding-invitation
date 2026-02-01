@@ -20,7 +20,7 @@
       <div class="comment-last">
         <p v-reveal class="fadeTarget">
           저희는 모든 분들께서 결혼 전시를<br />
-          부담없이 편안한 마음으로 즐기시길 원합니다.
+          부담없이 편안한 마음으로<br />즐기시길 원합니다.
         </p>
         <p v-reveal class="fadeTarget">
           거리가 멀거나 방문이 어려우신<br />
