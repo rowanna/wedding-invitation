@@ -12,19 +12,19 @@
 
           <div class="info-wrap">
             <div class="info">
-              <i class="fas fa-map-marker-alt"></i>
-              <p>서울특별시 종로구 인사동길 35-4</p>
-              <p>마루아트센터 2층 오미갤러리</p>
-            </div>
-
-            <div class="info">
               <i class="fas fa-calendar"></i>
               <p>
                 시간이 따로 정해져 있지 않지만 아래의 시간에 맞춰 방문을
                 권장합니다.
               </p>
-              <span> *11:00-13:00 (가족) <br /> </span>
-              <span> *13:00-15:00 (지인, 동료, 친구) <br /> </span>
+              <p> *11:00-13:00 (가족)=</p>
+              <p> *13:00-15:00 (지인, 동료, 친구)</p>
+            </div>
+
+						<div class="info">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>서울특별시 종로구 인사동길 35-4</p>
+              <p>마루아트센터 2층 오미갤러리</p>
             </div>
           </div>
 
