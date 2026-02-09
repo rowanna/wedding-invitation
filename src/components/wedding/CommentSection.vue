@@ -15,6 +15,10 @@
           오전 11시부터 오후 3시 사이에<br />
           편하신 시간에 방문해 주세요.
         </p>
+				<span v-reveal class="fadeTarget">
+				11-13시 까지는 가족 및 친척,
+13-15시 까지는 친구 및 지인 방문을 권장드립니다.
+</span>
       </div>
 
       <div class="comment-last">
