@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 const goToExhibition = () => {
-  window.open("https://rowanna.github.io/wedding-exhibition/", "_blank");
+  window.open("https://withspace.com/exhibitionDetail.do?menuNum=2000&idx=3802", "_blank");
 };
 </script>
 
