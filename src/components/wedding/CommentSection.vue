@@ -15,13 +15,13 @@
           오전 11시부터 오후 3시 사이에<br />
           편하신 시간에 방문해 주세요.
         </p>
-				<span v-reveal class="fadeTarget">
+				<p v-reveal class="fadeTarget bold">
 				11-13시 까지는 가족 및 친척,
 13-15시 까지는 친구 및 지인 방문을 권장드립니다.
-</span>
-<span v-reveal class="fadeTarget">
+</p>
+<p v-reveal class="fadeTarget bold">
 				식사 주문마감시간은 14시까지 입니다.
-</span>
+</p>
       </div>
 
       <div class="comment-last">
@@ -60,6 +60,9 @@ p {
   padding: 2rem 0;
   border-top: 1px solid var(--color-red);
   border-bottom: 1px solid var(--color-red);
+}
+.bold {
+  font-weight: 700;
 }
 .comment-last {
   padding: 2rem 0;
