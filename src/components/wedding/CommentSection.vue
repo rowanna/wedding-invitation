@@ -19,6 +19,9 @@
 				11-13시 까지는 가족 및 친척,
 13-15시 까지는 친구 및 지인 방문을 권장드립니다.
 </span>
+<span v-reveal class="fadeTarget">
+				식사 주문마감시간은 14시까지 입니다.
+</span>
       </div>
 
       <div class="comment-last">
