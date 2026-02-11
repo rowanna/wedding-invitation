@@ -130,7 +130,7 @@ section {
 }
 .info-wrap .info img {
   width: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   animation: rotate 10s linear infinite;
   transform-origin: center;
 }
